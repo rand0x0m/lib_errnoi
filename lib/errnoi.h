@@ -33,7 +33,7 @@
         errno = 0; \
         if ((ARG1) OPERATOR (ARG2)) { \
             if (errno != 0) { \
-                errnoi_print(__FILE__, __LINE__-2); \
+                errnoi_print(__FILE__, __LINE__); \
                 goto clean_up_begin; \
             } \
         } \
